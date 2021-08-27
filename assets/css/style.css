@@ -84,6 +84,23 @@ section {
     background-color: #f7f7f7;
 }
 
+.bg-gray-2 {
+    background-color: #EBEBEB;
+}
+
+.bg-image {
+    background-image: url(../images/bg-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-gradient {
+    background-image: url(../images/bg-gradient.svg) !important;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
 .btn-white {
     color: #2569A8;
     background-color: white;
@@ -98,6 +115,13 @@ section {
     border-bottom-left-radius: 20px !important;
     border-top-left-radius: 20px !important;
 
+}
+
+.odd-even-bg .col-3:nth-child(even) {
+    background-color: #EBEBEB;
+}
+.odd-even-bg .col-3:nth-child(odd) {
+    background-color: #F7F7F7;
 }
 
 .accordion-item {
