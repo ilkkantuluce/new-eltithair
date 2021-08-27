@@ -1,0 +1,98 @@
+body {
+
+}
+
+@media (min-width: 1200px){ 
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1100px;
+    }
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #2569a8;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+
+.dropdown-menu a {
+    color: black;
+}
+
+.google-reviews {
+    display: flex;
+    font-size: 15px;
+}
+
+.google-reviews div {
+    margin-left: 5px;
+}
+
+.btn {
+    padding: 3px 10px;
+    color: white;
+    width: fit-content;
+}
+
+.btn-main {
+    background-color: #328fe6;
+}
+
+.btn-outline-white {
+    border-color: white;
+}
+
+.bg-gray {
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+
+.card {
+    padding: 80px 15px;
+    border: none;
+}
+
+.rounded-start {
+    border-bottom-left-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+
+}
+
+
+
+footer {
+    background-color: #e8e8e8;
+    padding: 150px 0px;
+}
