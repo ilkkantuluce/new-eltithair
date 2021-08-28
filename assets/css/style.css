@@ -1,5 +1,22 @@
-body {
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Regular.ttf");
+}
 
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../font/OpenSans-Light.ttf");
+    font-weight: lighter;
+}
+
+body {
+    font-family: OpenSans;
 }
 
 @media (min-width: 1200px){ 
@@ -9,20 +26,33 @@ body {
 }
 
 a {
-    color: black;
+    color: #36393D;
     text-decoration: none;
 }
 
 a:hover {
-    color: black;
+    color: #36393D;
 }
 
 p {
-    margin-bottom: 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 h1 {
     margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .navbar {
@@ -40,18 +70,59 @@ h1 {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-dropdown-bg {
+    background-color: #1A4E8A;
+    opacity: 0.2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.menu-dropdown-bg.show {
+    display: block;
+}
+
+.dropdown-menu {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.dropdown-menu a {
+    color: #36393D;
+    margin: 0px;
+    padding: 8px 26px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #2569a8;
+    color: white;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: unset !important;
+    margin-top: .125rem;
+    right: 0px !important;
 }
 
 .nav-link:focus, .nav-link:hover {
     color: white;
 }
 
-.dropdown-menu a {
-    color: black;
-}
+
 
 .google-reviews {
     display: flex;
@@ -88,6 +159,10 @@ section {
     background-color: #EBEBEB;
 }
 
+.bg-gray-3 {
+    background-color: #E8E8E8;
+}
+
 .bg-image {
     background-image: url(../images/bg-image.png);
     background-position: center;
@@ -106,9 +181,28 @@ section {
     background-color: white;
 }
 
+.color-blue {
+    color: #2569A8;
+}
+
+.btn-bottom-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-bottom {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 .card {
-    padding: 80px 15px;
+    padding: 25px;
+    border-radius: 20px;
     border: none;
+    align-items: start;
 }
 
 .rounded-start {
@@ -124,14 +218,95 @@ section {
     background-color: #F7F7F7;
 }
 
+ol {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+
+ol li {
+    width: 30%;
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+ol:after {
+    content: "";
+    background: #A1CBF1;
+    width: 72%;
+    height: 6px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 1;
+}
+
+ol li:before {
+    position: absolute;
+    background: #2569a8;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 50%;
+    top: -35px;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+ol li:nth-child(1)::before {
+    content: '1';
+}
+
+ol li:nth-child(2)::before {
+    content: '2';
+}
+
+ol li:nth-child(3)::before {
+    content: '3';
+}
+
+ol li div {
+    display: flex;
+    align-items: center;
+}
+
+
+.accordion-button::after {
+    background-image: url("../images/arrow-down.svg");
+    background-position: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/arrow-down.svg");
+    background-position: center;
+}
+
 .accordion-item {
     border: none;
+    background-color: transparent;
 }
 
 .accordion-button {
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: transparent;
 }
 
 .accordion-body {
@@ -141,9 +316,10 @@ section {
 }
 
 .accordion-button:not(.collapsed) {
-    color: black;
+    color: #36393D;
     background-color: white;
     box-shadow: none;
+    background-color: transparent;
 }
 
 .accordion-button:focus {
