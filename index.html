@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title></title>
 </head>
@@ -26,17 +28,17 @@
               Behandlungen
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item fw-bold" href="#">Behandlungen</a></li>
+              <li><p class="dropdown-item-header">Behandlungen</p></li>
               <li><a class="dropdown-item" href="#">Haartransplantation</a></li>
               <li><a class="dropdown-item" href="#">Barthaartransplantation</a></li>
               <li><a class="dropdown-item" href="#">Augenbrauentransplantation</a></li>
               <li><a class="dropdown-item" href="#">Haartransplantation bei Frauen</a></li>
 
-              <li><a class="dropdown-item fw-bold" href="#">Behandlungen</a></li>
+              <li><p class="dropdown-item-header">Behandlungen</p></li>
               <li><a class="dropdown-item" href="#">Ablauf</a></li>
               <li><a class="dropdown-item" href="#">Heilungsphase</a></li>
 
-              <li><a class="dropdown-item fw-bold" href="#">Alternativen</a></li>
+              <li><p class="dropdown-item-header">Alternativen</p></li>
               <li><a class="dropdown-item" href="#">Heilungsphase</a></li>
               <li><a class="dropdown-item" href="#">Haarpigmentierung</a></li>
             </ul>
@@ -81,7 +83,7 @@
               <li><a class="dropdown-item" href="#">Presse</a></li>
               <li><a class="dropdown-item" href="#">Erfahrungen</a></li>
               
-              <li><a class="dropdown-item fw-bold" href="#">Deutsche Anlaufstellen</a></li>
+              <li><p class="dropdown-item-header">Deutsche Anlaufstellen</p></li>
               <li><a class="dropdown-item" href="#">Berlin</a></li>
               <li><a class="dropdown-item" href="#">München</a></li>
               <li><a class="dropdown-item" href="#">Düsseldorf</a></li>
@@ -112,8 +114,11 @@
               DE
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Text</a></li>
-              <li><a class="dropdown-item" href="#">Text</a></li>
+              <li><a class="dropdown-item" href="#">Englisch</a></li>
+              <li><a class="dropdown-item" href="#">Spanisch</a></li>
+              <li><a class="dropdown-item" href="#">Italienisch</a></li>
+              <li><a class="dropdown-item" href="#">Französisch</a></li>
+              <li><a class="dropdown-item" href="#">Portugesisch</a></li>
             </ul>
           </li>
          
@@ -126,18 +131,19 @@
   <section class="bg-image">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 order-2 order-md-1">
           <div>
             <div class="card">
               <img class="img-fluid" src="./assets/images/tv.png" alt="">
               <h1>Haartransplantation Türkei</h1>
               <h2>Mit einer Haartransplantation in der Türkei zu strahlend vollen Haaren bei <span class="fw-bold">Europas Nr. 1</span></h2>
+              <a href="" class="btn btn-main btn-gradient"><p>Kostenlose Haaranalyse »</p></a>
               <img class="img-fluid" src="./assets/images/reviews.png" alt="">
             </div>
           </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 order-1 order-md-2">
           <div class="btn-bottom-wrap">
             <a href="" class="btn btn-main btn-bottom">R.Quaresma - Europameister</a>
           </div>
@@ -148,377 +154,469 @@
 
 
   <section class="p-0 bg-gray-2">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row odd-even-bg">
-        <div class="col-3">
-          <div class="text-center">
+        <div class="col-md-1 odd-even-bg-item"></div>
+        <div class="col-md-3 odd-even-bg-item">
+          <div class="item">
             <img class="img-fluid" src="./assets/images/people-icon.svg" alt="">
-            <p class="fw-bold">+50.000 glückliche Patienten</p>
+            <h4>+50.000 glückliche Patienten</h4>
             <p>Unsere Ärzte und Spezialisten helfen täglich Betroffenen von Haarverlust zu strahlend vollem Haar.</p>
           </div>
         </div>
-        <div class="col-3">
-          <div class="text-center">
+        <div class="col-md-3 odd-even-bg-item">
+          <div class="item">
             <img class="img-fluid" src="./assets/images/check-icon.svg" alt="">
-            <p class="fw-bold">+50.000 glückliche Patienten</p>
+            <h4>+50.000 glückliche Patienten</h4>
             <p>Unsere Ärzte und Spezialisten helfen täglich Betroffenen von Haarverlust zu strahlend vollem Haar.</p>
           </div>
         </div>
-        <div class="col-3">
-          <div class="text-center">
+        <div class="col-md-3 odd-even-bg-item">
+          <div class="item">
             <img class="img-fluid" src="./assets/images/location-icon.svg" alt="">
-            <p class="fw-bold">+50.000 glückliche Patienten</p>
+            <h4>+50.000 glückliche Patienten</h4>
             <p>Unsere Ärzte und Spezialisten helfen täglich Betroffenen von Haarverlust zu strahlend vollem Haar.</p>
           </div>
         </div>
-        <div class="col-3">
-          <div class="text-center">
+        <div class="col-md-3 odd-even-bg-item">
+          <div class="item">
             <img class="img-fluid" src="./assets/images/thumbsup-icon.svg" alt="">
-            <p class="fw-bold">+50.000 glückliche Patienten</p>
+            <h4>+50.000 glückliche Patienten</h4>
             <p>Unsere Ärzte und Spezialisten helfen täglich Betroffenen von Haarverlust zu strahlend vollem Haar.</p>
           </div>
         </div>
+        <div class="col-md-1 odd-even-bg-item"></div>
       </div>
     </div>
   </section>
 
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="color-blue">Haartransplantation Türkei:</h2>
-          <h3>effektiv und langlebig dank Elithair Qualität</h3>
-          <p>Eine Haartransplantation in der Türkei bei Elithair bedeutet vor allem eines: Strahlend volles Haar in <span class="fw-bold">6 - 12 Monaten.</span> Dank auf Sie abgestimmte Prozesse brauchen Sie sich um nichts kümmern - angefangen bei der Erstberatung über den Eingriff bis hin zur Nachsorge. Mit der NEO FUE Methode, bieten wir Ihnen eine <span class="fw-bold">Weltneuheit,</span> die es exklusiv nur bei <span class="fw-bold">Europas Nr.1</span> gibt.</p>
-          <p>In nur wenigen Monaten können Sie sich dann selbst zu unseren unglaublichen <span class="fw-bold">Vorher-Nachher Ergebnissen</span> zählen!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img class="img-fluid" src="./assets/images/before-after-1.png" alt="">
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="./assets/images/before-after-2.png" alt="">
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid" src="./assets/images/before-after-3.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    
 
-  <section class="bg-gradient">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Auf direktem Weg zu strahlend vollem Haar</h2>
-          <p>Sie möchten Ihrem Haarausfall endlich ein Ende setzen? Unsere Vorher-Nachher Resultate finden Sie atemberaubend ? Mit Ihrer persönlichen Haaranalyse geht es für Sie ohne Umwege zu strahlend vollem Haar - kostenlos und unverbindlich.</p>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text">
+              <h2 class="color-blue">Haartransplantation Türkei:</h2>
+              <h3>effektiv und langlebig dank Elithair Qualität</h3>
+              <p>Eine Haartransplantation in der Türkei bei Elithair bedeutet vor allem eines: Strahlend volles Haar in <span class="fw-bold">6 - 12 Monaten.</span> Dank auf Sie abgestimmte Prozesse brauchen Sie sich um nichts kümmern - angefangen bei der Erstberatung über den Eingriff bis hin zur Nachsorge. Mit der NEO FUE Methode, bieten wir Ihnen eine <span class="fw-bold">Weltneuheit,</span> die es exklusiv nur bei <span class="fw-bold">Europas Nr.1</span> gibt.</p>
+              <p>In nur wenigen Monaten können Sie sich dann selbst zu unseren unglaublichen <span class="fw-bold">Vorher-Nachher Ergebnissen</span> zählen!</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div>
-            <img class="img-fluid" src="./assets/images/analytics.png" alt="">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <img class="img-fluid" src="./assets/images/before-after-1.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="./assets/images/before-after-2.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="./assets/images/before-after-3.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="" class="btn btn-main btn-gradient w-50"><p>Kostenlose Haaranalyse »</p></a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <section class="bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="color-blue">Die ideale Lösung für Ihren Haarausfall</h2>
-          <p>Egal wie Ihr Haarverlust ausfällt - bei uns sind Sie in den richtigen Händen! Neben der Haartransplantation in der Türkei können Sie bei Elithair von vielen weiteren Leistungen profitieren.</p>
-          <p>Egal welches Problem Sie mit Ihren Haaren haben, wir bieten die perfekt passende Lösung an. Überzeugen Sie sich selbst:</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-1.png" alt="">
+    </section>
+  
+    <section class="bg-gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Auf direktem Weg zu strahlend vollem Haar</h2>
+            <p>Sie möchten Ihrem Haarausfall endlich ein Ende setzen? Unsere Vorher-Nachher Resultate finden Sie atemberaubend ? Mit Ihrer persönlichen Haaranalyse geht es für Sie ohne Umwege zu strahlend vollem Haar - kostenlos und unverbindlich.</p>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-2.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-3.png" alt="">
+          <div class="col-md-6">
+            <div class="text-center">
+              <img class="img-fluid" src="./assets/images/beratung-icon.svg" alt="">
+              <a href="" class="btn btn-gradient-orange"><p>Haaranalyse starten!</p></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-4.png" alt="">
+    </section>
+  
+  
+    <section class="bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text">
+              <h2 class="color-blue">Die ideale Lösung für Ihren Haarausfall</h2>
+              <p>Egal wie Ihr Haarverlust ausfällt - bei uns sind Sie in den <span class="fw-bold">richtigen Händen!</span></p>
+              <p>Neben der Haartransplantation in der Türkei können Sie bei Elithair von vielen <span class="fw-bold">weiteren Leistungen</span> profitieren.</p>
+              <p>Egal welches Problem Sie mit Ihren Haaren haben, wir bieten die <span class="fw-bold">perfekt passende Lösung</span> an. <span class="fw-bold">Überzeugen Sie sich selbst:</span></p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-5.png" alt="">
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-1.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="mb-2 mt-2">
-            <img class="img-fluid" src="./assets/images/image-6.png" alt="">
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-2.png" alt="">
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="color-blue">Maximale Qualität zu patientenfreundlichen Preisen</h2>
-          <p>Im direkten Vergleich mit Deutschland profitieren Sie mit einer Haartransplantation in Istanbul nicht nur von höherer Qualität - <span class="fw-bold">Sie sparen sogar Geld!</span> </p>
-          <p>Und das nicht wenig: Durch <span class="fw-bold">staatliche Subventionierung,</span> niedrigere Lebenshaltungskosten und Löhne sinken für Ihre Haartransplantation in der Türkei auch die Kosten.</p>
-          <p>Das unglaubliche Preis-Leistung-Verhältnis ist ein weltweit einzigartiges Phänomen.</p>
-        
-          <p>Ihr <span class="fw-bold text-decoration-underline">individueller Haartransplantations Preis</span> wird von den Experten anhand der benötigten Haarwurzeln und der anzuwendenden Technik ermittelt.</p>
-          <p>Starten Sie noch heute Ihre <span class="fw-bold">persönliche Haaranalyse</span>, um ein individuelles und unverbindliches Angebot zu erhalten.</p>
-        </div>
-        <div class="col-md-6">
-          <div>
-            <img class="img-fluid" src="./assets/images/comparison.png" alt="">
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-3.png" alt="">
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="bg-gray">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img class="img-fluid" src="./assets/images/doctors.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <div>
-            <h2 class="color-blue">Wenn Haare, dann Türkei!</h2>
-            <p>Immer mehr Menschen entscheiden sich dazu ihren Haarausfall nicht einfach zu akzeptieren. Sie fliegen für eine <span class="fw-bold">Haartransplantation in die Türkei.</span></p>
-            <p>Istanbul hat sich international als <span class="fw-bold">erste Anlaufstelle</span> für Haarbehandlungen etabliert. Die renommiertesten Ärzte und <span class="fw-bold">modernsten Kliniken der Welt</span> befinden sich vor Ort und bieten</p>
-            <p>Ihnen die <span class="fw-bold">höchste Qualität</span> für Ihre Haarverpflanzung.</p>
-            <p> Genießen Sie die für Sie beste Haartransplantation in der Türkei bei <span class="fw-bold">Europas Marktführer.</span>  Überzeugen Sie sich selbst von unseren erstaunlichen Ergebnissen.</p>
+     
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-4.png" alt="">
+            </div>
           </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="color-blue">Vielen Dank für das Vertrauen!</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="text-center">
-            <img class="img-fluid" src="./assets/images/ricardo-quaresma.png" alt="">
-            <p class="fw-bold mb-0">Ricardo Quaresma</p>
-            <p>Fußball Europameister mit Portugal</p>
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-5.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <img class="img-fluid" src="./assets/images/rafet-el-roman.png" alt="">
-            <p class="fw-bold mb-0">Rafet El Roman</p>
-            <p>Popsänger mit über 1 Mrd. Streams</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <img class="img-fluid" src="./assets/images/hollywood-matze.png" alt="">
-            <p class="fw-bold mb-0">Hollywood Matze</p>
-            <p>YouTuber mit 170K Abonnenten</p>
+          <div class="col-lg-4 col-6">
+            <div class="mb-2 mt-2">
+              <img class="img-fluid" src="./assets/images/image-6.png" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-  <section class="bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="color-blue">In nur 3 Schritten zur erfolgreichen Haarverpflanzung</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <ol>
-            <li>
-              <div>
-                <img class="img-fluid" src="./assets/images/hairstyle-icon.svg" alt="">
-                <p>Kostenlose Haaranalyse</p>
-              </div>
-              <p>Komplett kostenfrei und unverbindlich. Erhalten Sie eine <span class="fw-bold">umfangreiche Analyse</span> Ihres aktuellen Haarverlusts. Dazu müssen unsere <span class="fw-bold">Experten</span> 3 Fotos Ihrer Haare analyiseren.</p>
-            </li>
-            <li>
-              <div>
-                <img class="img-fluid" src="./assets/images/talk-icon.svg" alt="">
-                <p>Persönliches Gespräch</p>
-              </div>
-              <p>Ihr Experte hat vor allem eins: <span class="fw-bold">Erfahrung.</span> In einem persönlichen Telefongespräch werden alle Ihre Fragen bezüglich der Haartransplantation in der Türkei geklärt. Wir sind rund um die Uhr für Sie da.</p>
-            </li>
-            <li>
-              <div>
-                <img class="img-fluid" src="./assets/images/travel-icon.svg" alt="">
-                <p>Reise nach Istanbul</p>
-              </div>
-              <p>Durch Ihr persönliches <span class="fw-bold">All-Inclusive Angebot</span> müssen Sie sich um nichts kümmern. Lediglich der Flug muss von Ihnen gebucht werden.</p>
-            </li>
-          </ol>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2 class="color-blue">Lassen Sie sich inspirieren -</h2>
-          <h3>Erfahrungsberichte unserer Patienten</h3>
-          <p>Ihre Haartransplantation in der Türkei wird eine einmalige Erfahrung. Das können unsere über <span class="fw-bold">50.000 begeisterten Patienten</span> nur bestätigen.</p>
-          <p>Denn die Reise in das Land am Bosporus wird vor allem eines: <span class="fw-bold">Emotional.</span> Verabschieden Sie sich schon jetzt von Ihrem Haarausfall und blicken Sie in eine Zukunft mit <span class="fw-bold">strahlend vollem Haar</span>!</p>
-          <p>Die Eigenhaarbehandlung wird eine Erfahrung, die Sie so schnell nicht vergessen werden. Sie wird außerdem der <span class="fw-bold">Start eines Lebens</span> mit mehr Selbstbewusstsein und Freude am eigenen Aussehen.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="bg-gradient">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Profitieren Sie von der Erfahrung der Spezialisten</h2>
-          <p>Positive Erfahrungsberichte der Patienten, hohe Expertise der Spezialisten und Resultate, die von der Qualität ihresgleichen suchen. Nutzen auch Sie unsere unverbindliche Haaranalyse für strahlend volles Haar und profitieren Sie von der Erfahrung unserer Experten.</p>
-        </div>
-        <div class="col-md-6">
-          <div>
-            <img class="img-fluid" src="./assets/images/analytics.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="bg-gray">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img class="img-fluid" src="./assets/images/product.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <div>
-            <h2 class="color-blue">NEO FUE -</h2>
-            <p>Eigens von unserem Forschungsteam entwickelt, ist die <span class="fw-bold">NEO FUE</span> eine weltweit einzigartige Technik im Bereich der Haarverpflanzungen. </p>
-            <p>Erstmals wird Ihr Kopfbereich schon vor Ihrem eigentlichen Eingriff <span class="fw-bold">perfekt vorbereitet.</span> Sie erhalten die NEO FUE Technik schon vor Ihrer Haartransplantation in der Türkei <span class="fw-bold">kostenlos</span> nach Hause geschickt.</p>
-          
-            <p>Ihre Vorteile:</p>
+    </section>
+  
+    <section>
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-md-6">
+            <div class="text">
+              <h2 class="color-blue">Maximale Qualität zu patientenfreundlichen Preisen</h2>
+              <p>Im direkten Vergleich mit Deutschland profitieren Sie mit einer Haartransplantation in Istanbul nicht nur von höherer Qualität - <span class="fw-bold">Sie sparen sogar Geld!</span> </p>
+              <p>Und das nicht wenig: Durch <span class="fw-bold">staatliche Subventionierung,</span> niedrigere Lebenshaltungskosten und Löhne sinken für Ihre Haartransplantation in der Türkei auch die Kosten.</p>
+              <p>Das unglaubliche Preis-Leistung-Verhältnis ist ein weltweit einzigartiges Phänomen.</p>
             
-            <ul>
-              <li>Deutlich effektivere Heilung</li>
-              <li>Höhere Anwuchsrate von bis zu 98%</li>
-              <li>perfekt natürlicher Spenderbereich</li>
-            </ul>
+              <p>Ihr <span class="fw-bold text-decoration-underline">individueller Haartransplantations Preis</span> wird von den Experten anhand der benötigten Haarwurzeln und der anzuwendenden Technik ermittelt.</p>
+              <p>Starten Sie noch heute Ihre <span class="fw-bold">persönliche Haaranalyse</span>, um ein individuelles und unverbindliches Angebot zu erhalten.</p>
+            </div>
+            <a href="" class="btn btn-main btn-gradient mb-0"><p>Kostenlose Haaranalyse »</p></a>
           </div>
-          
+          <div class="col-md-6">
+            <div>
+              <img class="img-fluid" src="./assets/images/comparison.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div>
-            <h2 class="color-blue d-inline">Sie dürfen genießen -</h2>
-            <h2 class="ml-4 d-inline">Wir machen den Rest!</h2>
-          
-            <div class="d-flex">
-              <ul>
-                <li>Alle Transferfahrten vor Ort</li>
-                <li>4* Luxushotel</li>
-                <li>Elithair-App</li>
-              </ul>
-
-              <ul>
-                <li>Haartransplantation</li>
-                <li>PRP-Behandlung</li>
-                <li>Dolmetscher-service</li>
-              </ul>
-
-              <ul>
-                <li>24/7 Ansprechpartner</li>
-                <li>7 deutsche Anlaufstellen</li>
-                <li>Nachsorge-Set</li>
-              </ul>
-
+    </section>
+  
+  
+  
+    <section class="bg-gray">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid" src="./assets/images/doctors.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <div class="text">
+              <h2 class="color-blue">Wenn Haare, dann Türkei!</h2>
+              <p>Immer mehr Menschen entscheiden sich dazu ihren Haarausfall nicht einfach zu akzeptieren. Sie fliegen für eine <span class="fw-bold">Haartransplantation in die Türkei.</span></p>
+              <p class="mb-0">Istanbul hat sich international als <span class="fw-bold">erste Anlaufstelle</span> für Haarbehandlungen etabliert. Die renommiertesten Ärzte und <span class="fw-bold">modernsten Kliniken der Welt</span> befinden sich vor Ort und bieten</p>
+              <p>Ihnen die <span class="fw-bold">höchste Qualität</span> für Ihre Haarverpflanzung.</p>
+              <p class="mb-0">Genießen Sie die für Sie beste Haartransplantation in der Türkei bei <span class="fw-bold">Europas Marktführer.</span>  Überzeugen Sie sich selbst von unseren erstaunlichen Ergebnissen.</p>
             </div>
             
           </div>
-          
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-  <section class="bg-gray">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div>
-            <h2 class="color-blue">Ihre Haartransplantation in der Türkei -</h2>
-            <h3>der Ablauf vor Ort</h3>
-            <p>Für Ihre Haartransplantation in Istanbul ist bereits alles geplant. Profitieren Sie von einem <span class="fw-bold">perfekt optimierten Ablauf</span> vor Ort.</p>
-            <p>Von der <span class="fw-bold">Unterbringung im Luxushotel</span> über die persönliche Voruntersuchung bei Dr. Balwi bis hin zu Ihrem Eingriff ist alles für Sie organisiert. Sie müssen nur die Reise buchen und in das Flugzeug steigen.</p>
-            <p>Die gesamte <span class="fw-bold">Betreuung vor Ort</span> findet durch Dolmetscher statt. So können Sie jederzeit Fragen stellen und auf Ihre Bedürfnisse kann eingegangen werden.</p>
-            <p>Innerhalb von <span class="fw-bold">72 Stunden</span> sind Sie dann auch schon wieder zuhause.</p>
+    </section>
+  
+  
+  
+  
+  
+  
+  
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="color-blue mb-4">Vielen Dank für das Vertrauen!</h2>
           </div>
         </div>
-        <div class="col-md-6">
-          <img class="img-fluid" src="./assets/images/72hours.png" alt="">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center">
+              <img class="img-fluid" src="./assets/images/ricardo-quaresma.png" alt="">
+              <p class="fw-bold mb-0">Ricardo Quaresma</p>
+              <p>Fußball Europameister mit Portugal</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <img class="img-fluid" src="./assets/images/rafet-el-roman.png" alt="">
+              <p class="fw-bold mb-0">Rafet El Roman</p>
+              <p>Popsänger mit über 1 Mrd. Streams</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center">
+              <img class="img-fluid" src="./assets/images/hollywood-matze.png" alt="">
+              <p class="fw-bold mb-0">Hollywood Matze</p>
+              <p>YouTuber mit 170K Abonnenten</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
+  
+  
+    <section class="bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="color-blue">In nur 3 Schritten zur erfolgreichen Haarverpflanzung</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="ordered-list">
+              <ol>
+                <li>
+                  <div class="card-header">
+                    <img class="img-fluid" src="./assets/images/hairstyle-icon.svg" alt="">
+                    <p>Kostenlose Haaranalyse</p>
+                  </div>
+                  <p>Komplett kostenfrei und unverbindlich. Erhalten Sie eine <span class="fw-bold">umfangreiche Analyse</span> Ihres aktuellen Haarverlusts. Dazu müssen unsere <span class="fw-bold">Experten</span> 3 Fotos Ihrer Haare analyiseren.</p>
+                </li>
+                <li>
+                  <div class="card-header">
+                    <img class="img-fluid" src="./assets/images/talk-icon.svg" alt="">
+                    <p>Persönliches Gespräch</p>
+                  </div>
+                  <p>Ihr Experte hat vor allem eins: <span class="fw-bold">Erfahrung.</span> In einem persönlichen Telefongespräch werden alle Ihre Fragen bezüglich der Haartransplantation in der Türkei geklärt. Wir sind rund um die Uhr für Sie da.</p>
+                </li>
+                <li>
+                  <div class="card-header">
+                    <img class="img-fluid" src="./assets/images/travel-icon.svg" alt="">
+                    <p>Reise nach Istanbul</p>
+                  </div>
+                  <p>Durch Ihr persönliches <span class="fw-bold">All-Inclusive Angebot</span> müssen Sie sich um nichts kümmern. Lediglich der Flug muss von Ihnen gebucht werden.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <a href="" class="btn btn-main btn-gradient w-50"><p>Kostenlose Haaranalyse »</p></a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  
+  
+  
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="text">
+              <h2 class="color-blue">Lassen Sie sich inspirieren -</h2>
+              <h3>Erfahrungsberichte unserer Patienten</h3>
+              <p>Ihre Haartransplantation in der Türkei wird eine einmalige Erfahrung. Das können unsere über <span class="fw-bold">50.000 begeisterten Patienten</span> nur bestätigen.</p>
+              <p>Denn die Reise in das Land am Bosporus wird vor allem eines: <span class="fw-bold">Emotional.</span> Verabschieden Sie sich schon jetzt von Ihrem Haarausfall und blicken Sie in eine Zukunft mit <span class="fw-bold">strahlend vollem Haar</span>!</p>
+              <p>Die Eigenhaarbehandlung wird eine Erfahrung, die Sie so schnell nicht vergessen werden. Sie wird außerdem der <span class="fw-bold">Start eines Lebens</span> mit mehr Selbstbewusstsein und Freude am eigenen Aussehen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="slider">
+              <div class="single-item-wrap">
+                <!--Slide item 1-->
+                <div class="single-item">
+                  <div class="thumbnail-wrap">
+                    <img class="img-fluid" src="./assets/images/thumbnail-1.png" alt="">
+                  </div>
+                  <div class="item-body">
+                    <p class="fw-bold">Nico G.</p>
+                    <p>„Wie zufrieden ich mit dem Ergebnis bin, lässt sich nicht in Worte fassen. Auf jeden Fall die beste Entscheidung meines Lebens.“</p>
+                    <p><span class="fw-bold">3.200</span> verpflanzte Haarwurzeln</p>
+                  </div>
+                </div>
+  
+                <!--Slide item 2-->
+                <div class="single-item">
+                  <div class="thumbnail-wrap">
+                    <img class="img-fluid" src="./assets/images/thumbnail-2.png" alt="">
+                  </div>
+                  <div class="item-body">
+                    <p class="fw-bold">Melisa</p>
+                    <p>„Ich bin einfach glücklich, dass ich eine Haartransplantation gemacht habe… - Darauf kommt es an.“</p>
+                    <p><span class="fw-bold">2.700</span> verpflanzte Haarwurzeln</p>
+                  </div>
+                </div>
+  
+                <!--Slide item 3-->
+                <div class="single-item">
+                  <div class="thumbnail-wrap">
+                    <img class="img-fluid" src="./assets/images/thumbnail-3.png" alt="">
+                  </div>
+                  <div class="item-body">
+                    <p class="fw-bold">Jhaki P.</p>
+                    <p>„Wenn ich heute in den Spiegel gucke, dann kann ich mir nicht vorstellen, keinen Bart zu haben“</p>
+                    <p><span class="fw-bold">4.200</span> verpflanzte Haarwurzeln</p>
+                  </div>
+                </div>
+
+                <div class="single-item">
+                  <div class="thumbnail-wrap">
+                    <img class="img-fluid" src="./assets/images/thumbnail-1.png" alt="">
+                  </div>
+                  <div class="item-body">
+                    <p class="fw-bold">Nico G.</p>
+                    <p>„Wie zufrieden ich mit dem Ergebnis bin, lässt sich nicht in Worte fassen. Auf jeden Fall die beste Entscheidung meines Lebens.“</p>
+                    <p><span class="fw-bold">3.200</span> verpflanzte Haarwurzeln</p>
+                  </div>
+                </div>
+                
+
+
+
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <section class="bg-gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Profitieren Sie von der Erfahrung der Spezialisten</h2>
+            <p>Positive Erfahrungsberichte der Patienten, hohe Expertise der Spezialisten und Resultate, die von der Qualität ihresgleichen suchen. Nutzen auch Sie unsere unverbindliche Haaranalyse für strahlend volles Haar und profitieren Sie von der Erfahrung unserer Experten.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="text-center">
+              <img class="img-fluid" src="./assets/images/beratung-icon.svg" alt="">
+              <a href="" class="btn btn-gradient-orange"><p>Haaranalyse starten!</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  
+    <section class="bg-gray">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid" src="./assets/images/product.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <div class="text">
+              <h2 class="color-blue">NEO FUE -</h2>
+              <p>Eigens von unserem Forschungsteam entwickelt, ist die <span class="fw-bold">NEO FUE</span> eine weltweit einzigartige Technik im Bereich der Haarverpflanzungen. </p>
+              <p>Erstmals wird Ihr Kopfbereich schon vor Ihrem eigentlichen Eingriff <span class="fw-bold">perfekt vorbereitet.</span> Sie erhalten die NEO FUE Technik schon vor Ihrer Haartransplantation in der Türkei <span class="fw-bold">kostenlos</span> nach Hause geschickt.</p>
+          
+              <p>Ihre Vorteile:</p>
+            </div>
+            
+            <div class="custom-list">
+              <ul>
+                <li>Deutlich effektivere Heilung</li>
+                <li>Höhere Anwuchsrate von bis zu 98%</li>
+                <li>perfekt natürlicher Spenderbereich</li>
+              </ul>
+            </div>
+            <a href="" class="btn btn-main btn-gradient"><p>Kostenlose Haaranalyse »</p></a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="color-blue d-inline">Sie dürfen genießen -</h2>
+            <h2 class="ml-4 d-inline">Wir machen den Rest!</h2>
+          </div>
+        </div>
+        <div class="row normal-list">
+          <div class="col-md-3">
+            <ul>
+              <li>Alle Transferfahrten vor Ort</li>
+              <li>4* Luxushotel</li>
+              <li>Elithair-App</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Haartransplantation</li>
+              <li>PRP-Behandlung</li>
+              <li>Dolmetscher-service</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>24/7 Ansprechpartner</li>
+              <li>7 deutsche Anlaufstellen</li>
+              <li>Nachsorge-Set</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <section class="bg-gray">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div>
+              <h2 class="color-blue">Ihre Haartransplantation in der Türkei -</h2>
+              <h3>der Ablauf vor Ort</h3>
+              <p>Für Ihre Haartransplantation in Istanbul ist bereits alles geplant. Profitieren Sie von einem <span class="fw-bold">perfekt optimierten Ablauf</span> vor Ort.</p>
+              <p>Von der <span class="fw-bold">Unterbringung im Luxushotel</span> über die persönliche Voruntersuchung bei Dr. Balwi bis hin zu Ihrem Eingriff ist alles für Sie organisiert. Sie müssen nur die Reise buchen und in das Flugzeug steigen.</p>
+              <p>Die gesamte <span class="fw-bold">Betreuung vor Ort</span> findet durch Dolmetscher statt. So können Sie jederzeit Fragen stellen und auf Ihre Bedürfnisse kann eingegangen werden.</p>
+              <p>Innerhalb von <span class="fw-bold">72 Stunden</span> sind Sie dann auch schon wieder zuhause.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="./assets/images/72hours.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
 
 
 
@@ -536,7 +634,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="question-header1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-1" aria-expanded="true" aria-controls="question-4">
-                  Warum soll ich eine Haartransplantation in der Türkei machen lassen?
+                  <p>Warum soll ich eine Haartransplantation in der Türkei machen lassen?</p>
                 </button>
               </h2>
               <div id="question-1" class="accordion-collapse collapse show" aria-labelledby="question-header1">
@@ -548,10 +646,10 @@
           </div>
 
           <div>
-            <div class="accordion-item">
+            <div class="accordion-item border-mobile">
               <h2 class="accordion-header" id="question-header2">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-2" aria-expanded="true" aria-controls="question-4">
-                  Was ist bei meinem Eingriff inklusive?
+                  <p>Was ist bei meinem Eingriff inklusive?</p>
                 </button>
               </h2>
               <div id="question-2" class="accordion-collapse collapse show" aria-labelledby="question-header2">
@@ -570,7 +668,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="question-header3">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-3" aria-expanded="true" aria-controls="question-3">
-                  Coronavirus - Wie ist die aktuelle Lage im Land am Bosporus?
+                  <p>Coronavirus - Wie ist die aktuelle Lage im Land am Bosporus?</p>
                 </button>
               </h2>
               <div id="question-3" class="accordion-collapse collapse show" aria-labelledby="question-header3">
@@ -593,10 +691,10 @@
           </div>
 
           <div>
-            <div class="accordion-item">
+            <div class="accordion-item border-mobile">
               <h2 class="accordion-header" id="question-header4">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question-4" aria-expanded="true" aria-controls="question-4">
-                  Ist eine Haartransplantation in der Türkei gefährlich?
+                  <p>Ist eine Haartransplantation in der Türkei gefährlich?</p>
                 </button>
               </h2>
               <div id="question-4" class="accordion-collapse collapse show" aria-labelledby="question-header4">
@@ -617,19 +715,19 @@
     <div class="top-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 border-right">
-            <div>
+          <div class="col-lg-3 border-right">
+            <div class="contact">
               <h1>Kontakt</h1>
-              <div class="d-flex">
+              <div class="contact-item">
                 <img src="./assets/images/mail-icon.svg" alt=""><p>info@elithairtransplant.com</p>
               </div>
-              <div class="d-flex">
+              <div class="contact-item">
                 <img src="./assets/images/phone-icon.svg" alt=""><p>030-609886060</p>
               </div>
               <a class="btn btn-white" href="#">Haaranalyse starten</a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <h1>Behandlungen</h1>
             <div>
               <ul>
@@ -639,7 +737,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <h1>Expertise</h1>
             <div>
               <ul>
@@ -652,7 +750,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <h1>Informationen</h1>
             <div>
               <ul>
@@ -662,7 +760,10 @@
                 <li><a href="">F.A.Q.</a></li>
               </ul>
               <div class="socials">
-  
+                <a href=""><img src="./assets/images/facebook.svg" alt=""></a>
+                <a href=""><img src="./assets/images/youtube.svg" alt=""></a>
+                <a href=""><img src="./assets/images/pinterest.svg" alt=""></a>
+                <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -671,9 +772,8 @@
     </div>
     <div class="bottom-footer">
       <div class="container">
-        <div class="row">
-
-          <div class="col-md-12">
+        <div class="row bottom-footer-items">
+          <div class="col-lg-5">
             <div>
               <a href="">Impressum</a> |
               <a href="">Datenschutz</a> |
@@ -681,7 +781,13 @@
               <a href="">AGB</a>
             </div>
           </div>
-
+          <div class="col-lg-7">
+            <div>
+              <img class="img-fluid" src="./assets/images/footer-1.png" alt="">
+              <img class="img-fluid" src="./assets/images/footer-2.png" alt="">
+              <img class="img-fluid" src="./assets/images/footer-3.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -691,6 +797,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
   <script src="./assets/js/script.js"></script>
 </body>
 
