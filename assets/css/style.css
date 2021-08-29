@@ -102,6 +102,10 @@ h3 {
     margin: 0px;
 }
 
+.google-review.hide {
+    display: none !important;
+}
+
 @media (min-width: 1200px){
     .navbar-expand-xl .navbar-nav {
         flex-direction: row;
@@ -162,6 +166,10 @@ h3 {
 
 .dropdown-menu .dropdown-section li:last-child a {
     border-color: transparent;
+}
+
+.dropdown-menu.with-border a {
+    border-bottom: 1px solid #F8F8F8;
 }
 
 .nav-link:focus, .nav-link:hover {
@@ -231,9 +239,7 @@ main .row {
     content: "";
     width: 60%;
     height: 100%;
-    background: transparent linear-gradient(
-188deg
-, #a1cbf18a 30%, #328fe6 70%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(188deg, #a1cbf18a 30%, #328fe6 70%) 0% 0% no-repeat padding-box;
     position: absolute;
     top: 0;
     right: 0;
@@ -739,6 +745,7 @@ footer .footer-section {
 
     .dropdown-toggle.show {
         font-weight: bold;
+        border-color: transparent !important;
     }
     
     .dropdown-menu {
@@ -775,7 +782,20 @@ footer .footer-section {
     }
 
     .navbar .btn {
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #2569a8;
+        border: 1px solid #F8F8F8;
+    }
+
+    .navbar .btn p {
+        background-color: #2569a8;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .navbar .btn p:after {
+        background: transparent linear-gradient(188deg, #428acd 30%, #296ead 70%) 0% 0% no-repeat padding-box;
     }
 
     .nav-item .nav-link {
@@ -793,6 +813,9 @@ footer .footer-section {
     .dropdown-item-header {
         margin-top: 0px;
         color: #F8F8F8;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
     }
 
     .navbar a {
@@ -842,14 +865,22 @@ footer .footer-section {
     }
 
     .bg-image .row {
-        margin-top: -50px;
+        margin-top: -60px;
+    }
+
+    .background-mobile-wrap {
+        width: 100%;
+        margin-top: -13px;
+        overflow: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
     
     .background-mobile {
         display: block;
-        width: 100%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        width: 130%;
+        left: -15%;
+        position: relative;
     }
 
     .btn-bottom-wrap {
