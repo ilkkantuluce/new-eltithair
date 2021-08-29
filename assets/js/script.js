@@ -30,9 +30,26 @@ $('.single-item-wrap').slick({
 });
 
 $(document).ready(function(){
-    $(".dropdown-toggle").click(function(){
-      $(".menu-dropdown-bg").toggleClass("show");
+    $(document).click(function(){
+        if ($(".dropdown-toggle").hasClass("show")) {
+            $(".menu-dropdown-bg").addClass("show");
+        }
+        else{
+            $(".menu-dropdown-bg").removeClass("show");
+
+        }
     });
 
+    $("body").click(function(){
+        if ($(".dropdown-toggle").hasClass("show")) {
+            $(".menu-dropdown-bg").addClass("show");
+        }
+        else{
+            $(".menu-dropdown-bg").removeClass("show");
+
+        }
+    });
+
+    
 
 });
