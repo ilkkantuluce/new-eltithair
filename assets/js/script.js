@@ -1,32 +1,28 @@
-$('.single-item-wrap').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [{
-          breakpoint: 1024,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-          }
-      }, {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-          }
-      }, {
-          breakpoint: 480,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-      }
-
-  ]
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+    },
 });
 
 $(document).ready(function(){

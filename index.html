@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./assets/css/style.css">
   <title></title>
 </head>
@@ -255,7 +254,7 @@
       </div>
     </section>
   
-    <section class="bg-gradient">
+    <section class="bg-gradient smaller-section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -479,11 +478,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
-            <div class="slider">
-              <div class="single-item-wrap">
+          <div class="col-12">           
+            <div class="slider swiper mySwiper">
+              <div class="single-item-wrap swiper-wrapper">
                 <!--Slide item 1-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-1.png" alt="">
                   </div>
@@ -499,7 +498,7 @@
                 </div>
   
                 <!--Slide item 2-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-2.png" alt="">
                   </div>
@@ -515,7 +514,7 @@
                 </div>
   
                 <!--Slide item 3-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-3.png" alt="">
                   </div>
@@ -531,7 +530,7 @@
                 </div>
 
                 <!--Slide item 4-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-1.png" alt="">
                   </div>
@@ -548,7 +547,7 @@
 
 
                 <!--Slide item 5-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-2.png" alt="">
                   </div>
@@ -564,7 +563,7 @@
                 </div>
   
                 <!--Slide item 6-->
-                <div class="single-item">
+                <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">
                     <img class="img-fluid" src="./assets/images/thumbnail-3.png" alt="">
                   </div>
@@ -579,8 +578,8 @@
                   </div>
                 </div>
 
-
               </div>
+              <div class="swiper-pagination"></div>
             </div>
 
           </div>
@@ -590,7 +589,7 @@
   
   
   
-    <section class="bg-gradient">
+    <section class="bg-gradient smaller-section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -645,7 +644,7 @@
   
   
   
-    <section>
+    <section class="smaller-section-padding">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -653,7 +652,7 @@
             <h2 class="ml-4 d-inline">Wir machen den Rest!</h2>
           </div>
         </div>
-        <div class="row normal-list">
+        <div class="row normal-list fw-bold">
           <div class="col-lg-3">
             <ul>
               <li>Alle Transferfahrten vor Ort</li>
@@ -903,8 +902,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

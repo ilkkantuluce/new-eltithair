@@ -303,7 +303,8 @@ section {
     background-size: cover;
     padding: 0px;
     height: 90vh;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .background-mobile {
@@ -315,7 +316,11 @@ section {
     background-position: center;
     background-size: cover;
     color: white;
+}
+
+.smaller-section-padding {
     padding: 70px 0px 70px 0px;
+
 }
 
 .bg-gradient p {
@@ -351,7 +356,7 @@ section {
 
 .btn-bottom {
     position: absolute;
-    bottom: -9%;
+    bottom: -2%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -361,6 +366,14 @@ section {
     border-radius: 20px;
     border: none;
     align-items: start;
+}
+
+.card h1 {
+    margin-top: 15px;
+}
+
+.card .btn {
+    margin-bottom: 30px;
 }
 
 .rounded-start {
@@ -391,8 +404,8 @@ section {
 }
 
 .odd-even-bg .item {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     text-align: center;
 }
 
@@ -503,6 +516,7 @@ section {
 
 .normal-list ul li {
     margin-bottom: 25px;
+    font-size: 18px;
 }
 
 .custom-list ul {
@@ -602,26 +616,11 @@ section {
     margin-bottom: 10px;
 }
 
-.slick-next, .slick-prev {
-    display: none !important;
-}
 
-.slick-dots li.slick-active button:before {
-    color: #2569A8;
-}
 
-.slick-dots li button:before {
-    color: #EBEBEB;
-    opacity: 1;
-}
-
-.slick-dots li button:before  {
-    font-size: 16px;
-}
-
-.slick-dots {
+.swiper-pagination {
     margin-top: 20px;
-    bottom: unset;
+    position: relative;
 }
 
 footer {
@@ -756,7 +755,7 @@ footer .footer-section {
 
     .navbar {
         overflow-y: auto;
-        max-height: 470px;
+        max-height: 100vh;
         height: fit-content;
     }
 
@@ -799,6 +798,7 @@ footer .footer-section {
     .navbar a {
         padding-top: 15px;
         padding-bottom: 15px;
+        font-size: 16px;
     }
 
     li.nav-item:last-child .dropdown-toggle {
@@ -830,8 +830,6 @@ footer .footer-section {
         padding-right: 20px !important;
     }
 
- 
-
     .bg-image {
         background-image: none;
         background-position: top;
@@ -859,8 +857,12 @@ footer .footer-section {
     }
 
     .btn-bottom {
-        top: -30px;
+        top: -17px;
         bottom: unset;
+    }
+
+    .btn-bottom-wrap .btn{
+        padding: 5px 10px;
     }
 
     .ordered-list ol {
@@ -913,6 +915,7 @@ footer .footer-section {
         padding: 40px 25px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        text-align: center;
     }
 
     .odd-even-bg .odd-even-bg-item:nth-child(even) {
@@ -945,12 +948,36 @@ footer .footer-section {
 }
 
 @media screen and (max-width: 765px) {
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
     .margin-bottom-mobile {
         margin-bottom: 10px;
     }
 
     .accordion-item.border-mobile {
         border-color: #36393D;
+    }
+
+    .bg-gradient h2 {
+        font-weight: bold;
     }
 
     footer .socials {
