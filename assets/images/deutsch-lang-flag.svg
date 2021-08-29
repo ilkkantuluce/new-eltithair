@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_62" data-name="Ellipse 62" cx="12" cy="12" r="12" transform="translate(6708.03 -184.039)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_7" data-name="Gruppe maskieren 7" transform="translate(-6708.03 184.039)" clip-path="url(#clip-path)">
+    <rect id="Rechteck_1867" data-name="Rechteck 1867" width="36" height="8" transform="translate(6708.03 -184.039)" fill="#474747"/>
+    <rect id="Rechteck_1868" data-name="Rechteck 1868" width="36" height="8" transform="translate(6708.03 -168.039)" fill="#fcaf2a"/>
+    <rect id="Rechteck_1869" data-name="Rechteck 1869" width="36" height="8" transform="translate(6708.03 -176.039)" fill="#ed4c4c"/>
+  </g>
+</svg>

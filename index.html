@@ -128,15 +128,16 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle border-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              DE
+              <p class="d-xl-none d-inline">Deutsch</p>
+              <img class="d-xl-inline d-none me-1" src="./assets/images/deutsch-lang-flag.svg" alt="">
             </a>
             <ul class="dropdown-menu with-border" aria-labelledby="navbarDropdown">
-              <div class="dropdown-section">
-                <li><a class="dropdown-item" href="#">Englisch</a></li>
-                <li><a class="dropdown-item" href="#">Spanisch</a></li>
-                <li><a class="dropdown-item" href="#">Italienisch</a></li>
-                <li><a class="dropdown-item" href="#">Französisch</a></li>
-                <li><a class="dropdown-item" href="#">Portugesisch</a></li>
+              <div class="dropdown-section language-section">
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/deutsch-lang-flag.svg" alt="">Englisch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/deutsch-lang-flag.svg" alt="">Spanisch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/deutsch-lang-flag.svg" alt="">Italienisch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/deutsch-lang-flag.svg" alt="">Französisch</a></li>
+                <li><a class="dropdown-item" href="#"><img src="./assets/images/deutsch-lang-flag.svg" alt="">Portugesisch</a></li>
               </div>
             </ul>
           </li>
@@ -163,7 +164,7 @@
               <img class="img-fluid d-md-inline d-none" src="./assets/images/tv.png" alt="">
               <img class="img-fluid m-auto d-md-none d-inline" src="./assets/images/tv-mobile.png" alt="">
               <h1>Haartransplantation Türkei</h1>
-              <h2>Mit einer Haartransplantation in der Türkei zu strahlend vollen Haaren bei <span class="fw-bold">Europas Nr. 1</span></h2>
+              <p>Mit einer Haartransplantation in der Türkei zu strahlend vollen Haaren bei <span class="fw-bold">Europas Nr. 1</span></p>
               <a href="" class="btn btn-main btn-gradient"><p>Kostenlose Haaranalyse »</p></a>
               <img class="img-fluid d-md-inline d-none" src="./assets/images/reviews.png" alt="">
               <img class="img-fluid m-auto d-md-none d-inline" src="./assets/images/reviews-mobile.png" alt="">
@@ -482,8 +483,12 @@
         </div>
         <div class="row">
           <div class="col-12">           
-            <div class="slider swiper mySwiper">
+            <div class="swiper mySwiper">
+              <div class="slide-number">
+                <div class="swiper-pagination"></div>
+              </div>
               <div class="single-item-wrap swiper-wrapper">
+            
                 <!--Slide item 1-->
                 <div class="single-item swiper-slide">
                   <div class="thumbnail-wrap">

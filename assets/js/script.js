@@ -4,7 +4,10 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
+      type: "fraction",
     },
+  
     breakpoints: {
         "@0.00": {
           slidesPerView: 1,
@@ -45,4 +48,9 @@ $(document).ready(function(){
 
         }
     });
+
+    $(".navbar-toggler").click(function(){
+      $(".google-review").toggleClass("hide");
+    });
+
 });
