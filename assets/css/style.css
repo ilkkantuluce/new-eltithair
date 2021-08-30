@@ -45,10 +45,6 @@ p {
     color: #36393d;
 }
 
-.text p {
-    margin-bottom: 30px;
-}
-
 h1 {
     margin-bottom: 20px;
     font-size: 40px;
@@ -249,6 +245,10 @@ main .row {
     background-color: #328fe6;
 }
 
+.btn-hero {
+    background-color: #2569a8;
+}
+
 .btn-gradient {
     padding: 0px !important;
     display: block;
@@ -260,9 +260,10 @@ main .row {
 
 .btn-gradient p {
     font-size: 20px;
+    font-weight: bold;
     line-height: 27px;
     background: #328fe6;
-    padding: 10px 30px;
+    padding: 16px 30px;
     border-radius: 8px;
     color: #fff;
     position: relative;
@@ -344,8 +345,19 @@ section {
     background-size: cover;
     padding: 0px;
     height: 90vh;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    min-height: 608px;
+    overflow: hidden;
+}
+
+.bg-image .container,
+.bg-image .row {
+    height: 100%;
+}
+
+.bg-image .vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 
 .background-mobile {
@@ -358,6 +370,10 @@ section {
     background-size: cover;
     color: white;
     position: relative;
+}
+
+.bg-gradient .fw-bold {
+    font-weight: normal !important;
 }
 
 .bg-gradient img {
@@ -385,6 +401,10 @@ section {
 
 .bg-gradient p {
     color: white;
+}
+
+.bg-gradient h2 {
+    margin-bottom: 50px;
 }
 
 .bg-gradient img {
@@ -416,13 +436,13 @@ section {
 
 .btn-bottom {
     position: absolute;
-    bottom: -2%;
+    bottom: 3%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
 .card {
-    padding: 25px;
+    padding: 30px;
     border-radius: 20px;
     border: none;
     align-items: start;
@@ -430,18 +450,22 @@ section {
 
 .card h1 {
     margin-top: 15px;
-    white-space: nowrap;
 }
 
 .card p {
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-weight: 500;
     line-height: 1.2;
 }
 
 .card .btn {
     margin-bottom: 30px;
+}
+
+.card .btn p {
+    font-size: 28px !important;
+    font-weight: bold;
 }
 
 .rounded-start {
@@ -573,6 +597,14 @@ section {
     margin-left: 20px;
 }
 
+.text p {
+    margin-bottom: 30px;
+}
+
+.text .p-clear {
+    margin-top: 30px;
+}
+
 .normal-list {
     margin-top: 30px !important;
 }
@@ -585,6 +617,10 @@ section {
 .normal-list ul li {
     margin-bottom: 25px;
     font-size: 18px;
+}
+
+.custom-list p {
+    margin-bottom: 20px;
 }
 
 .custom-list ul {
@@ -696,7 +732,7 @@ section {
 .slide-number {
     position: absolute;
     top: 10px;
-    left: 22%;
+    left: 200px;
     padding: 6px 15px;
     background-color: rgba(0, 0, 0, 0.404);
     z-index: 3;
@@ -920,8 +956,8 @@ footer .footer-section {
     }
 
     .navbar a {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 16px;
     }
 
@@ -940,7 +976,11 @@ footer .footer-section {
     }
 
     section {
-        padding: 50px 0px 50px 0px;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .smaller-section-padding {
+        padding: 40px 0px 40px 0px;
     }
 
     .container-fluid {
@@ -966,7 +1006,7 @@ footer .footer-section {
     }
 
     .bg-image .row {
-        margin-top: -60px;
+        margin-top: -85px;
     }
 
     .background-mobile-wrap {
@@ -989,13 +1029,19 @@ footer .footer-section {
     }
 
     .btn-bottom {
-        top: -17px;
+        top: -14px;
         bottom: unset;
     }
 
     .btn-bottom-wrap .btn{
         padding: 5px 10px;
+        font-size: 14px;
     }
+
+    .btn-gradient p {
+        padding: 10px 13px;
+    }
+
 
     .ordered-list ol {
         list-style: none;
@@ -1048,6 +1094,27 @@ footer .footer-section {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         text-align: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .card div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card p {
+        font-size: 19px;
+    }
+
+    .card .btn p {
+        font-size: 19px !important;
+    }
+
+    .card h1 {
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 21px;
     }
 
     .odd-even-bg {
@@ -1068,15 +1135,27 @@ footer .footer-section {
     }
 
     .odd-even-bg .odd-even-bg-item .item {
-        margin-top: 10px;
+        margin-top: 5px;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         padding: 30px;
     }
 
     .odd-even-bg .item,
     .odd-even-bg .item p {
         color: white;
+    }
+
+    .odd-even-bg .item h4 {
+        margin-bottom: 10px;
+    }
+
+    .odd-even-bg img {
+        margin-bottom: 10px;
+    }
+
+    .custom-list p {
+        font-size: 18px;
     }
 
     footer .border-right {
@@ -1090,9 +1169,16 @@ footer .footer-section {
 
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 990px) {
+    .slide-number {
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     p {
-        font-size: 16px;
+        font-size: 17px;
+        line-height: 27px;
     }
 
     h1 {
@@ -1100,24 +1186,42 @@ footer .footer-section {
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 30px;
+        line-height: 40px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 24px;
+        line-height: 33px;
     }
 
-    .card p {
-        font-size: 22px;
+    .text .d-inline {
+        display: block !important;
     }
 
+    .text p {
+        margin-bottom: 30px !important;
+    }
+    
+
+    .bg-white-mobile {
+        background-color: white;
+    }
+
+    .bg-gray-mobile {
+        background-color: #F5F5F5;
+    }
+    
     .slide-number {
-        left: unset;
-        right: 10px;
+        left: 150px;
+    }
+
+    .slide-wrap {
+        padding: 0px !important;
     }
 
     .margin-bottom-mobile {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .accordion-item.border-mobile {
@@ -1126,26 +1230,26 @@ footer .footer-section {
 
     .bg-gradient h2 {
         font-weight: bold;
+        margin-bottom: 30px;
     }
 
     .bg-gradient:after {
         width: 0;
     }
 
-    .bg-gradient .col-md-6:last-child {
+    /*.bg-gradient .col-md-6:last-child {
         position: relative;
-        padding: 90px 15px 0;
-    }
+    }*/
 
     .bg-gradient .col-md-6:last-child:after {
         content: "";
         width: 100%;
-        height: 100%;
-        background: transparent linear-gradient(
+        height: 28%;
+        background: transparent linear-gradient( 
     188deg
-    , #a1cbf14f 30%, #2569a8 70%) 0% 0% no-repeat padding-box;
+     , #a1cbf14f 30%, #2569a8 70%) 0% 0% no-repeat padding-box;
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
         z-index: 1;
         clip-path: ellipse(190% 100% at 100% 100%);
@@ -1160,7 +1264,17 @@ footer .footer-section {
         padding-right: 32px !important;
     }
 
-    .bg-gradient 
+    .bg-gradient .fw-bold {
+        font-weight: bold !important;
+    }
+
+    .bg-gradient-section-center {
+        text-align: center;
+    }
+
+    .bg-gradient-section-center h2 {
+        font-weight: normal;
+    }
 
     footer .socials {
         display: flex;
@@ -1188,5 +1302,31 @@ footer .footer-section {
         margin-left: 15px;
         margin-bottom: 10px;
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    .slide-number {
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .slide-number {
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .card h1 {
+        font-size: 19px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .card .btn p {
+        font-size: 18px !important;
     }
 }
